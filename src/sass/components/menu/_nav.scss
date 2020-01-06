@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__name {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  &__name--font {
+    @extend %Montserrat;
+    text-transform: uppercase;
+    margin-bottom: -22px;
+    margin-left: 50px;
+  }
+
+  &__menu {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  &__icon {
+    display: flex;
+  }
+}

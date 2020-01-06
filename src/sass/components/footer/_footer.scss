@@ -1,0 +1,81 @@
+.footer {
+  display: block;
+  margin-top: 100px;
+
+  &--placing {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+.cart {
+  display: inline-block;
+  line-height: 2;
+
+  &__link {
+    color: $accent;
+    text-decoration: none;
+  }
+}
+
+form {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+input {
+  font-size: 16px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  vertical-align: middle;
+}
+
+input[type='email'] {
+  width: 230px;
+  height: 40px;
+  border: 1px solid $gccent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
+
+input[type='submit'] {
+  width: 152px;
+  height: 40px;
+  background: #95e1d3;
+  border: none;
+  color: $white;
+  text-transform: uppercase;
+  @include montserrat(900);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+  color: $gccent;
+  @extend %roboto;
+}
+
+input:-ms-input-placeholder {
+  color: $gccent;
+  @extend %roboto;
+}
+
+input::-ms-input-placeholder {
+  color: $gccent;
+  @extend %roboto;
+}
+
+input::placeholder {
+  color: $gccent;
+  @extend %roboto;
+}

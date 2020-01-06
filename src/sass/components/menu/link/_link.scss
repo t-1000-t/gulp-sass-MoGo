@@ -1,0 +1,26 @@
+.link {
+  text-decoration: none;
+
+  &__colorfont {
+    color: $white;
+    @extend %Montserrat;
+    font-weight: 600;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 6px;
+      width: 0;
+      border-bottom: 3px solid $yellow;
+      transition: all 0.2s linear;
+    }
+
+    &:hover {
+      color: $yellow;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

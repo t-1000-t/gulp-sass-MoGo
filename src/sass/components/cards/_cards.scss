@@ -1,0 +1,9 @@
+.cards {
+  display: flex;
+
+  &__cards--wrp {
+    width: 100%;
+    height: 470px;
+    justify-content: space-between;
+  }
+}

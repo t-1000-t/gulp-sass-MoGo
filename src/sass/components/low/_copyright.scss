@@ -1,0 +1,9 @@
+.copyright {
+  font-size: 14px;
+
+  &__text {
+    vertical-align: middle;
+    @extend %Montserrat;
+    color: #333;
+  }
+}

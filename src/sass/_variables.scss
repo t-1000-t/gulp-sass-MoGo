@@ -1,0 +1,19 @@
+$accent: #f38181;
+$gccent: #95e1d3;
+$white: #fff;
+$yellow: rgb(252, 227, 138);
+$black: black;
+$col: 80px;
+$gap: 20px;
+$column: 100px;
+
+@mixin montserrat($font-weight) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: font-weight;
+}
+
+%roboto {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+}
